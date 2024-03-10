@@ -64,19 +64,6 @@ body{
     border: 5px solid #FFBD59;
 }
 
-.jumbotron .indumentaria{
-    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
-}
-
-.jumbotron .clientesTitulo{
-    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(14\).png);
-}
-.jumbotron .nosotros{
-    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
-}
-.jumbotron .contacto-banner{
-    background-image: url(../Images/tienda-ropa/Contacto.png)
-}
 /* H2-Oferta */
 main {
     width: 100vw;
