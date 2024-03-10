@@ -1,3 +1,522 @@
 *{
     box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    width: 100vw;
+    background-color: black; 
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+/*Navbar*/
+.container-fluid button{
+    background-color: #FFBD59;
+}
+
+.navbar{
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsla(36, 3%, 30%, 0.911);
+    z-index: 1;
+    position: fixed;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: white;
+    text-shadow:0 0 5px #e68b14;
+    margin: 20px;
+}
+
+.nav-link:hover{
+    color: #FFD194;
+}
+
+.collapse{
+    display: flex;
+    justify-content: center;
+}
+
+/*JUMBOTRON*/
+.jumbotron{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(12\).png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.jumbotron h1{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+    text-align: center;
+    font-size: 50px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-color: hsla(36, 3%, 30%, 0.911);
+    background-size: cover;
+    background-position: center;
+    color: #FFBD59;
+    text-shadow: 0 0 5px black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 5px solid #FFBD59;
+}
+
+.jumbotron .indumentaria{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
+}
+
+.jumbotron .clientesTitulo{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(14\).png);
+}
+.jumbotron .nosotros{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
+}
+.jumbotron .contacto-banner{
+    background-image: url(../Images/tienda-ropa/Contacto.png)
+}
+/* H2-Oferta */
+main {
+    width: 100vw;
+    overflow: hidden;
+}
+h2{
+    width: 70%;
+    display: block;
+    margin: 50px auto;
+    background-color: #FFBD59;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid orange;
+    padding: 5px;
+    box-shadow: inset 0 0 10px orange;
+
+}
+/* Main-Indumentaria */
+
+.item{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.conteiner-items:hover{
+    box-shadow: 1px 1px 10px 1px#FFBD59;
+}
+
+.item img{
+    width: 100%;
+    transition: all .5s;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 10px 1px#FFBD59;
+}
+.item:hover img{
+    transform: scale(1.1);
+}
+
+.info-product h4{
+    background-color: #FFBD59;
+    border: 5px solid orange;
+    font-size: 30px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-product h3{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    margin-top:20px;
+    border-radius: 1px;
+}
+
+p.old-price{
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+    text-decoration: line-through;
+}
+
+
+p.price {
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+}
+
+.button{
+    background-color: hsla(36, 3%, 70%, 0.466);
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all .5s;
+    border: 3px solid orange;
+}
+
+
+.button button{
+    font-weight:bold;
+    text-transform:uppercase;
+    color:aliceblue;
+    font-size: 20px;
+    background: none;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left:none;
+    padding: 1px;
+    margin: 2px;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+/* Clientes */
+
+.intro{
+    background-color: hsla(36, 3%, 30%, 0.74);
+    width: 100%;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px;
+    border: 5px solid #FFBD59;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    background-color: hsla(36, 3%, 30%, 0.356);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container img{
+    display: block;
+    margin: 0 auto;
+    width:fit-content;
+    height: 150px;
+    border: 5px solid #e68b14
+}
+
+h3{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #FFBD59;
+    margin-bottom: 15px;
+}
+
+.container p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+p{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.p, span{
+    color: #FFBD59;
+}
+
+/* Nosotros */
+/*Maps*/
+.maps, .iframe{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+
+}
+
+.maps, h2{
+    margin-top: 10px;
+}
+
+/*Galeria*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 20px
+}
+
+.item-g{
+    border: 2px solid;
+    background-color: #e68b14;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(4\).png);
+}
+
+.item2{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(2\).png);
+}
+
+.item3{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(5\).png);
+}
+
+.item4{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(6\).png);
+}
+
+.item5{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(27\).png);
+}
+
+.item6{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(29\).png);
+}
+
+.item7{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(8\).png);
+}
+
+.item8{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(7\).png);
+}
+
+
+/* Contacto */
+
+/*Contacto-Formulario*/
+
+.contacto, .h1{
+    background-image: url(../Images/tienda-ropa/Contacto.png);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+
+}
+
+.linkC a{
+    display: block;
+    color: #FFD194;
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.subtittle{
+    width: 70%;
+    padding: 20px;
+}
+.subtittle h3{
+    background-color: hsla(36, 3%, 30%, 0.911);
+    color: aliceblue;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 450px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.formulario{
+    width: 50%;
+    height: 400px;
+    background-color: hsla(36, 3%, 30%, 0.808);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: #FFD194;
+}
+
+.formulario h4{
+    font-size: 30px;
+    background-color: hsla(36, 3%, 30%, 0.808);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #FFD194;
+}
+
+.contact{
+    width: 100%;
+    background-color: hsl(40, 2%, 24%);
+    color: aliceblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFD194;
+}
+
+.formulario .buttonC{
+    background-color: hsla(36, 3%, 30%, 0.664);
+    color: aliceblue;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-color: #FFD194;
+
+}
+
+/* Media Galeria*/
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 400px);
+    }
+
+}
+
+/* Media Queries Index.html */
+@media  screen and (width < 600px) {
+    footer{
+        width: 100%;
+    }
+    .p-5.jumbotron{
+        width: max-content;
+    }
+    h2{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    .item{
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width:1200px){
+    footer{
+        width: 100%;
+    }
+    .p-5.jumbotron{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    main{
+        width: 100%;
+    }
+}
+
+
+/* Media Queries Clientes.html */
+@media only screen and (max-width:600px){
+    .intro{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .container img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+
+/*Footer*/
+
+footer{
+    background-color: hsla(36, 3%, 30%, 0.911);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+footer p{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.redes a{
+    color: #FFD194;
+    text-decoration: none;
 }
